@@ -1,0 +1,141 @@
+/* --- RESET --- */
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background: transparent;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+input, textarea {
+  background: #ccc;
+  color: #000
+}
+
+
+
+/* --- CLEARFIX --- */
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* --- BOARD --- */
+
+.game-canvas {
+  position: relative;
+  height: 90%;
+  width: 90%;
+
+}
+
+.hud {
+  position: absolute;
+  color: #fff;
+  top: 10px;
+  left: 10px;
+}
+
+#game-canvas {
+  border: 2px solid black;
+  float: left
+}
+
+.info-sidebar {
+  float: left;
+
+  width: 100%;
+
+}
+
+.stats {
+  float: left
+}
+
+.instructions {
+  float: left;
+  position: absolute;
+  display: none;
+  width: 500px;
+  border: 2px solid black;
+  background: #ccc;
+  right: 0;
+}
+
+.display-instructions {
+  position: absolute;
+  left: 100%;
+  float: right;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.display-instructions:hover .instructions {
+  display: block;
+  z-index: 1;
+}
+
+
+body {
+  background: #aaa
+}
+
+.you-win {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  left: 35%;
+  top: 25%;
+  background: -webkit-linear-gradient(left, #ff0000,
+#ff1919,
+#ff3232,
+#ff4c4c,
+#ff6666,
+#ff7f7f,
+#ff9999,
+#ffb2b2,
+#ffcccc,
+#ffe5e5,
+#ffffff);
+  opacity: .9;
+  border-radius: 30px;
+}
+
+.text {
+  position: relative;
+  text-align: center;
+  top: 40%;
+  font-weight: bold;
+}
+
+
+.new-game {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: red;
+
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+}
